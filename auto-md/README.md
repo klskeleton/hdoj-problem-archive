@@ -2,7 +2,7 @@
 
 ## 自动生成 杭电OJ 题目 md 文档 
 
-1. 下载 auto-md.exe
+1. 下载 [auto-md.exe ](https://github.com/klskeleton/hdoj-problem-archive/releases/tag/auto-md)
 
 2. 放到任意文件夹下，将 auto-md.exe 所在的文件夹路径，添加到：`我的电脑 > 属性 > 高级系统设置 > 环境变量  > Path `
 
