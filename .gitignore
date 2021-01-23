@@ -1,0 +1,11 @@
+
+#auto-md
+auto-md/node_modules
+auto-md/node_modules/*
+
+#exe
+
+**.exe
+
+#json
+**package-lock.json
