@@ -37,19 +37,19 @@ module.exports = async (opt) => {
 - Memory Limit:   ${data.MemoryLimit}  (Java/Others)
 
 ## Problem Description
-<pre style="background-color:#f8f8f8">
+<div style="background-color:#f8f8f8">
 ${data.ProblemDescription}
-</pre>
+</div>
 
 ## Input
-<pre style="background-color:#f8f8f8">
+<div style="background-color:#f8f8f8">
 ${data.Input}
-</pre>
+</div>
 
 ## Output
-<pre style="background-color:#f8f8f8">
+<div style="background-color:#f8f8f8">
 ${data.Output}
-</pre>
+</div>
 
 ## Sample Input
 \`\`\`
