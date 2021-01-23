@@ -1,5 +1,6 @@
 const fs = require('fs');
 const readline = require('readline');
+const path = require('path');
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
@@ -24,6 +25,7 @@ function checkFile(file_name) {
 //创建 md 文件
 module.exports = async (opt) => {
     let pid = opt.pid
+    let cwd = opt.cwd
     let url  = opt.url
     let data= opt.data
     let sourceCode= opt.sourceCode
@@ -75,7 +77,8 @@ ${sourceCode}
 \`\`\`
 ` : ''}
 `;
-    fs.writeFile(file_name, md, (err) => {
+    
+    fs.writeFile(path.resolve(cwd || process.cwd(),file_name), md, (err) => {
         if (err) {
             console.log(err);
         } else {

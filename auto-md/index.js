@@ -12,7 +12,9 @@ const automd = require('./auto-md');
 let pid = 1000
 //源码，如果未指定的话，则使用
 let sourceCode = ''
+//目标文件
 let target = ''
+
 process.argv.forEach((val, index) => {
     //读取题目pid
     if (val.match(/--pid=(.*)/)) {
@@ -56,6 +58,6 @@ api(url).then((data) => {
 }).catch((err) => {
     console.log(err)
 });
-
+ 
 
 
